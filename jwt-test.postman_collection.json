@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "79e3c1db-84e5-47e4-a9cc-e4fdd3070d3b",
+		"name": "jwt-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45450828",
+		"_collection_link": "https://egor-3487208.postman.co/workspace/egor's-Workspace~74042b53-4e05-4336-836a-0f2870521aeb/collection/45450828-79e3c1db-84e5-47e4-a9cc-e4fdd3070d3b?action=share&source=collection_link&creator=45450828"
+	},
+	"item": [
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"egorka_grushin@mail.ru\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"egorka_grushin@mail.ru\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVnb3JrYV9ncnVzaGluQG1haWwucnUiLCJpZCI6IjY4ZTJjZjhlYzE4M2ZkNjUyMThjMDU5OCIsImlzQWN0aXZhdGVkIjoidHJ1ZSIsImlhdCI6MTc1OTc4MDI5NiwiZXhwIjoxNzU5NzgwMzI2fQ.jz9bdev2QOYE0zhqYeLP_iGAt7tffUKqs7-AQDrZQqM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
